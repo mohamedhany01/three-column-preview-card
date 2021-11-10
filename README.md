@@ -26,11 +26,12 @@ Users should be able to:
 
 - Desktop
 
-
+![Desktop Column Preview Card Component](https://user-images.githubusercontent.com/61619208/141077454-6f639a22-07be-4b5a-8082-3c5b71365070.png)
 
 
 - Mobile
 
+![Mobile Column Preview Card Component](https://user-images.githubusercontent.com/61619208/141077473-70ec5881-25ea-44df-9378-fa199bd6099c.png)
 
 
 ### Links
