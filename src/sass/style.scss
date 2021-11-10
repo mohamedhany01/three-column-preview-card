@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Lexend Deca";
+    src: url("../fonts/LexendDeca-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Big Shoulders Display";
+    src: url("../fonts/BigShouldersDisplay-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+$orangeColor: hsl(31, 77%, 52%);
+$whiteGreen : hsl(184, 100%, 22%);
+$darkGreen : hsl(179, 100%, 13%);
+$paragraphsColor: hsla(0, 0%, 100%, 0.75);
+$lightGray : hsl(0, 0%, 95%);
+
+
+// Media for rounded corners
+$radiusWidth: 12px;
+@media (min-width: 0px) and (max-width: 767px) {
+
+    .card-component:first-child {
+        border-top-left-radius: $radiusWidth;
+        border-top-right-radius: $radiusWidth;
+    }
+
+    .card-component:last-child {
+        border-bottom-left-radius: $radiusWidth;
+        border-bottom-right-radius: $radiusWidth;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .card-component:first-child {
+        border-top-left-radius: $radiusWidth;
+        border-bottom-left-radius: $radiusWidth;
+    }
+
+    .card-component:last-child {
+        border-top-right-radius: $radiusWidth;
+        border-bottom-right-radius: $radiusWidth;
+    }
+}
+
+// Mod layout in resizing
+@media (min-width: 0px) and (max-width: 767px) {
+    body {
+        padding: 15%;
+    }
+
+}
+
+@media (min-width: 768px) {
+    html, body {
+        height: 100%;
+    }
+    
+    body {
+        padding: 2% 15%;
+    }
+
+}
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: $lightGray;
+}
+
+.header {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    color: $lightGray;
+}
+
+p {
+    color: $paragraphsColor;
+}
+
+.card-one {
+    background-color: $orangeColor;
+
+    .btn {
+        color: $orangeColor;
+    }
+}
+
+.card-two {
+    background-color: $whiteGreen;
+
+    .btn {
+        color: $whiteGreen;
+    }
+}
+
+.card-three {
+    background-color: $darkGreen;
+
+    .btn {
+        color: $darkGreen;
+    }
+}
+
+.btn {
+    background-color: $lightGray;
+    width: 144px;
+    padding: 10px;
+    border-width: 2px;
+
+    &:hover {
+        background-color: transparent;
+        color: $lightGray;
+        border: 2px solid $lightGray;
+    }
+}
